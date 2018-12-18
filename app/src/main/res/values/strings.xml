@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- other-->
+    <string name="app_name">sensorApp</string>
+    <string name="main_activity_title">Sensor App</string>
+    <string name="no_sensor_error">No Sensor available</string>
+
+    <!-- title text-->
+    <string name='proximity_title'>Proximity Sensor</string>
+    <string name='accelerometer_title'>Accelerometer Sensor</string>
+
+    <!-- value text-->
+    <string name="proximity_text">Sensor Value: %1$.2f</string>
+
+    <!-- button text-->
+    <string name="proximityBtnText">Proximity Sensor</string>
+    <string name="accelerometerBtnText">accelerometer</string>
+
+
+
+</resources>
