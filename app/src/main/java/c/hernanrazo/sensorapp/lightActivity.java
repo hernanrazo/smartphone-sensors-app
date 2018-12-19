@@ -26,6 +26,8 @@ public class lightActivity extends AppCompatActivity implements SensorEventListe
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 
+        //ambient light sensor does not report accuracy changes
+
     }
 
     @Override

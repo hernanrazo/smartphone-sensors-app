@@ -6,9 +6,10 @@
     <string name="no_sensor_error">No Sensor available</string>
 
     <!-- title text-->
-    <string name='proximity_title'>Proximity Sensor</string>
-    <string name='accelerometer_title'>Accelerometer</string>
-    <string name='light_title'>Ambient Light Sensor</string>
+    <string name="proximity_title">Proximity Sensor</string>
+    <string name="accelerometer_title">Accelerometer</string>
+    <string name="light_title">Ambient Light Sensor</string>
+    <string name="GPS_title">GPS</string>
 
 
     <!-- value text-->
@@ -17,12 +18,14 @@
     <string name="accelerometer_y_value">Y Value: %1$.2f</string>
     <string name="accelerometer_z_value">Z Value: %1$.2f</string>
     <string name="light_text">Sensor Value: %1$.2f</string>
+    <string name="GPS_lat_value">Latitude: %1$.2f</string>
+    <string name="GPS_long_value">Longitude: %1$.2f</string>
 
     <!-- button text-->
     <string name="proximityBtnText">Proximity Sensor</string>
     <string name="accelerometerBtnText">Accelerometer</string>
     <string name="lightBtnText">Ambient Light Sensor</string>
-
+    <string name="GPSBtnText">GPS</string>
 
 
 </resources>

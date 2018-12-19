@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Button proximityBtn = findViewById(R.id.proximityBtn);
         Button accelerometerBtn = findViewById(R.id.accelerometerBtn);
         Button lightBtn = findViewById(R.id.lightBtn);
+        Button GPSBtn = findViewById(R.id.GPSBtn);
 
         proximityBtn.setOnClickListener(new View.OnClickListener () {
             @Override
@@ -41,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent lightIntent = new Intent(MainActivity.this, lightActivity.class);
                 startActivity(lightIntent);
+            }
+        });
+
+        GPSBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent GPSIntent = new Intent(MainActivity.this, GPSActivity.class);
+                startActivity(GPSIntent);
             }
         });
     }

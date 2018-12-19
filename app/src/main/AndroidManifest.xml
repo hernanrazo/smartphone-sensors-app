@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="c.hernanrazo.sensorapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,10 +28,10 @@
         <activity
             android:name=".accelerometerActivity"
             android:screenOrientation="portrait" />
-
-        <activity android:name=".lightActivity"
-            android:screenOrientation="portrait">
-        </activity>
+        <activity
+            android:name=".lightActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".GPSActivity"></activity>
     </application>
 
 </manifest>
