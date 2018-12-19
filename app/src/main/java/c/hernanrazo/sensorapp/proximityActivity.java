@@ -34,9 +34,9 @@ public class proximityActivity extends AppCompatActivity implements SensorEventL
         setContentView(R.layout.activity_proximity);
 
         String noSensorError = getResources().getString(R.string.no_sensor_error);
-        sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
-
         proximitySensorText = findViewById(R.id.proximityText);
+
+        sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
 
         if(proximitySensor == null) {

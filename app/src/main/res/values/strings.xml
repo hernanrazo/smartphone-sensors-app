@@ -7,10 +7,13 @@
 
     <!-- title text-->
     <string name='proximity_title'>Proximity Sensor</string>
-    <string name='accelerometer_title'>Accelerometer Sensor</string>
+    <string name='accelerometer_title'>Accelerometer</string>
 
     <!-- value text-->
     <string name="proximity_text">Sensor Value: %1$.2f</string>
+    <string name="accelerometer_x_value">X Value: %1$.2f</string>
+    <string name="accelerometer_y_value">Y Value: %1$.2f</string>
+    <string name="accelerometer_z_value">Z Value: %1$.2f</string>
 
     <!-- button text-->
     <string name="proximityBtnText">Proximity Sensor</string>
