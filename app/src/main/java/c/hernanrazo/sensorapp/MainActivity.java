@@ -15,8 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
         Button proximityBtn = findViewById(R.id.proximityBtn);
         Button accelerometerBtn = findViewById(R.id.accelerometerBtn);
+        Button lightBtn = findViewById(R.id.lightBtn);
 
         proximityBtn.setOnClickListener(new View.OnClickListener () {
+            @Override
             public void onClick(View view) {
 
                 Intent proximityIntent = new Intent(MainActivity.this, proximityActivity.class);
@@ -25,10 +27,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
         accelerometerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
 
                 Intent accelerometerIntent = new Intent(MainActivity.this, accelerometerActivity.class);
                 startActivity(accelerometerIntent);
+            }
+        });
+
+        lightBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent lightIntent = new Intent(MainActivity.this, lightActivity.class);
+                startActivity(lightIntent);
             }
         });
     }

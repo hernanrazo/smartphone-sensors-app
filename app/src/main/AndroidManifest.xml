@@ -18,11 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".proximityActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".proximityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accelerometerActivity"
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".accelerometerActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".lightActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
