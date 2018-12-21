@@ -26,6 +26,8 @@
     <string name="accelerometerBtnText">Accelerometer</string>
     <string name="lightBtnText">Ambient Light Sensor</string>
     <string name="GPSBtnText">GPS</string>
+    <string name="GPSBtnText2">Get Coordinates</string>
+
 
 
 </resources>
