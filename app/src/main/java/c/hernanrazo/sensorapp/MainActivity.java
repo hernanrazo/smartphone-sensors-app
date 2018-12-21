@@ -8,6 +8,9 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    //TODO: add logic if sensor isnt available
+    //TODO: make button invisible if sensor not available
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button accelerometerBtn = findViewById(R.id.accelerometerBtn);
         Button lightBtn = findViewById(R.id.lightBtn);
         Button GPSBtn = findViewById(R.id.GPSBtn);
+        Button magnetometerBtn = findViewById(R.id.magnetometerBtn);
 
         proximityBtn.setOnClickListener(new View.OnClickListener () {
             @Override
@@ -48,9 +52,20 @@ public class MainActivity extends AppCompatActivity {
         GPSBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent GPSIntent = new Intent(MainActivity.this, GPSActivity.class);
                 startActivity(GPSIntent);
             }
+        });
+
+        magnetometerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent magnetometerIntent = new Intent(MainActivity.this, magnetometerActivity.class);
+                startActivity(magnetometerIntent);
+            }
+
         });
     }
 }

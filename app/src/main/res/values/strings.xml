@@ -1,5 +1,4 @@
 <resources>
-
     <!-- other-->
     <string name="app_name">sensorApp</string>
     <string name="main_activity_title">Sensor App</string>
@@ -10,7 +9,7 @@
     <string name="accelerometer_title">Accelerometer</string>
     <string name="light_title">Ambient Light Sensor</string>
     <string name="GPS_title">GPS</string>
-
+    <string name="magnetometer_title">Magnetometer</string>
 
     <!-- value text-->
     <string name="proximity_text">Sensor Value: %1$.2f</string>
@@ -20,6 +19,9 @@
     <string name="light_text">Sensor Value: %1$.2f</string>
     <string name="GPS_lat_value">Latitude: %1$.2f</string>
     <string name="GPS_long_value">Longitude: %1$.2f</string>
+    <string name="magnetometer_x_value">X Value: %1$.2f</string>
+    <string name="magnetometer_y_value">Y Value: %1$.2f</string>
+    <string name="magnetometer_z_value">Z Value: %1$.2f</string>
 
     <!-- button text-->
     <string name="proximityBtnText">Proximity Sensor</string>
@@ -27,7 +29,5 @@
     <string name="lightBtnText">Ambient Light Sensor</string>
     <string name="GPSBtnText">GPS</string>
     <string name="GPSBtnText2">Get Coordinates</string>
-
-
-
+    <string name="magnetometerBtnText">Magnetometer</string>
 </resources>
