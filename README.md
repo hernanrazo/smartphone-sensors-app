@@ -37,6 +37,5 @@ The Pressure sensor measures the ambient air pressure in hPa or mBar. This senso
 
 Sources and Helpful Links
 ---
-
-https://developer.android.com/guide/topics/sensors/sensors_environment  
+https://developer.android.com/guide/topics/sensors/sensors_overview  
 https://developer.android.com/guide/topics/sensors/sensors_environment
