@@ -2,7 +2,7 @@
     <!-- other-->
     <string name="app_name">sensorApp</string>
     <string name="main_activity_title">Sensor App</string>
-    <string name="no_sensor_error">No Sensor available</string>
+    <string name="Unavailable_sensors_message">Unavailable sensors will have their buttons disabled</string>
 
     <!-- title text-->
     <string name="proximity_title">Proximity Sensor</string>
