@@ -7,7 +7,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 public class accelerometerActivity extends AppCompatActivity implements SensorEventListener {
@@ -17,7 +16,6 @@ public class accelerometerActivity extends AppCompatActivity implements SensorEv
     private TextView xValue;
     private TextView yValue;
     private TextView zValue;
-    private TextView noSensorError;
 
     public void onSensorChanged(SensorEvent sensorEvent) {
 
@@ -44,15 +42,9 @@ public class accelerometerActivity extends AppCompatActivity implements SensorEv
         xValue = findViewById(R.id.xValue);
         yValue = findViewById(R.id.yValue);
         zValue = findViewById(R.id.zValue);
-        noSensorError = findViewById(R.id.noSensorError);
 
         sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-
-        if(accelerometer == null) {
-            noSensorError.setVisibility(View.VISIBLE);
-            noSensorError.setText(getResources().getString(R.string.no_sensor_error));
-        }
     }
 
     @Override

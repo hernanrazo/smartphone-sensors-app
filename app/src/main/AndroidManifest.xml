@@ -21,26 +21,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".proximityActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
 
         <activity
             android:name=".accelerometerActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
 
         <activity
             android:name=".lightActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
 
         <activity
             android:name=".GPSActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" >
+        </activity>
 
         <activity
             android:name=".magnetometerActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".pressureActivity"
+            android:screenOrientation="portrait" >
 
         </activity>
     </application>

@@ -41,8 +41,6 @@ public class GPSActivity extends AppCompatActivity {
                     double longValue = location.getLongitude();
                     latText.setText(getResources().getString(R.string.GPS_lat_value, latValue));
                     longText.setText(getResources().getString(R.string.GPS_long_value, longValue));
-
-                    Toast.makeText(getApplicationContext(), "Lat: " + latValue + "\n Lon: " + longValue, Toast.LENGTH_LONG).show();
                 }
             }
         });
