@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class lightActivity extends AppCompatActivity implements SensorEventListener {
 
+    //set instances for the sensorManager, light sensor, and textViews
     private SensorManager sensorManager;
     private Sensor lightSensor;
     private TextView lightSensorText;
@@ -18,7 +19,10 @@ public class lightActivity extends AppCompatActivity implements SensorEventListe
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
+        //retrieve the current value of the light sensor
         float currentValue = sensorEvent.values[0];
+
+        //display the retrieved values onto the textView
         lightSensorText.setText(getResources().getString(R.string.light_text, currentValue));
     }
 
@@ -33,11 +37,15 @@ public class lightActivity extends AppCompatActivity implements SensorEventListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_light);
 
+        //retrieve widgets
         lightSensorText = findViewById(R.id.lightSensorText);
+
+        //define instances
         sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
     }
 
+    //register the listener once the activity starts
     @Override
     protected void onStart() {
         super.onStart();
@@ -48,6 +56,7 @@ public class lightActivity extends AppCompatActivity implements SensorEventListe
         }
     }
 
+    //stop the sensor when the activity stops to reduce battery usage
     @Override
     protected void onStop() {
         super.onStop();

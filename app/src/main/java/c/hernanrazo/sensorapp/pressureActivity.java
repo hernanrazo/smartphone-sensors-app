@@ -18,7 +18,10 @@ public class pressureActivity extends AppCompatActivity implements SensorEventLi
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
+        //retrieve the current value of the pressure sensor
         float currentValue = sensorEvent.values[0];
+
+        //display the retrieved value onto the textView
         pressureSensorText.setText(getResources().getString(R.string.pressure_text, currentValue));
     }
 
@@ -33,12 +36,15 @@ public class pressureActivity extends AppCompatActivity implements SensorEventLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pressure);
 
+        //retrieve widget
         pressureSensorText = findViewById(R.id.pressureSensorText);
 
+        //define instances
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         pressureSensor = sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE);
     }
 
+    //register the listener once the activity starts
     @Override
     protected void onStart() {
         super.onStart();
@@ -49,6 +55,7 @@ public class pressureActivity extends AppCompatActivity implements SensorEventLi
         }
     }
 
+    //stop the sensor when the activity stops to reduce battery usage
     @Override
     protected void onStop() {
         super.onStop();

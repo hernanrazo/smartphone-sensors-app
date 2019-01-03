@@ -18,7 +18,10 @@ public class proximityActivity extends AppCompatActivity implements SensorEventL
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
+        //retrieve the current value of the proximity sensor
         float currentValue = sensorEvent.values[0];
+
+        //display the retrieved value onto the textView
         proximitySensorText.setText(getResources().getString(R.string.proximity_text, currentValue));
     }
 
@@ -33,11 +36,15 @@ public class proximityActivity extends AppCompatActivity implements SensorEventL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proximity);
 
+        //retrieve widget
         proximitySensorText = findViewById(R.id.proximityText);
+
+        //define instances
         sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
     }
 
+    //register the listener once the activity starts
     @Override
     protected void onStart() {
         super.onStart();
@@ -48,6 +55,7 @@ public class proximityActivity extends AppCompatActivity implements SensorEventL
         }
     }
 
+    //stop the sensor when the activity stops to reduce battery usage
     @Override
     protected void onStop() {
         super.onStop();
